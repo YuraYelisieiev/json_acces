@@ -27,7 +27,6 @@ def json_acces(user_param, number_friends):
     data = connection.read().decode()
     js = json.loads(data)
     for u in js['users']:
-        print(u)
         s = u[user_param]
         friends_dict[u['screen_name']] = s
     return friends_dict
