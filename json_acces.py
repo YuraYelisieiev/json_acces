@@ -31,5 +31,3 @@ def json_acces(user_param, number_friends):
         s = u[user_param]
         friends_dict[u['screen_name']] = s
     return friends_dict
-
-print(json_acces('description', 3))
